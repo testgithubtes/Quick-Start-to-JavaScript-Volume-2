@@ -1,5 +1,6 @@
-function calculateArea(side1, side2){
-  console.log(side1 * side2);
-}
-calculateArea(5,4);
+var friends = ["Mark","Lisa","Denny"];
 
+friends[3] = "bio"
+console.log(friends[3]);
+friends.push("rost");
+console.log(friends[4]);

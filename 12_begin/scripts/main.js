@@ -23,21 +23,18 @@ Create your own plan, or try the following:
 
 
 -----------------------------------------------
-Remember: There are many ways to create things with code! The most important part is to write it and get it working.  If you can't get something to work, try making it simpler.  
-After, look for ways you might improve your code! 
+Remember: There are many ways to create things with code! The most important part is to write it and get it working.  If you can't get something to work, try making it simpler.
+After, look for ways you might improve your code!
 */
 
+var randomNumber=Math.round(Math.random()*5);
+var numberChoose= prompt("choose number");
+while (numberChoose!= randomNumber){
 
-alert("It is the zombie apocalypse.  You are looting a store and suddenly a zombie bursts through the door!");
-
-var weapon = prompt("You search around frantically for a weapon.  What do you choose?  A bow and arrow, an axe, or a rubber chicken?");
-
-var randomNumber = Math.round(Math.random());
-
-alert("You attack the zombie with your" + " " + weapon);
-
-if(randomNumber === 0 ){
-  alert("The zombie bites you.  You lose!!!");
-} else if (randomNumber === 1 ){
-  alert("You kill the zombie with your" + " " + weapon + ". You win!");
+  if(numberChoose<randomNumber){
+    var numberChoose= prompt("choose another number biger");
+  }else {
+    var numberChoose= prompt("choose another number smaller");
+  }
 }
+alert("great work the correct number is "+numberChoose);
